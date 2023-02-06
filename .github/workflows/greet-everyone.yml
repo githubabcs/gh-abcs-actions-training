@@ -1,0 +1,41 @@
+name: 01-2. Greet Everyone
+# This workflow is triggered on pushes to the repository.
+on: 
+  push:
+  
+  workflow_call:
+    inputs:
+      name:
+        description: 'What is your name?'
+        required: true
+        type: string
+
+  workflow_dispatch:
+    inputs:
+      name:
+        description: 'What is your name?'
+        required: false
+        default: 'Octocat'
+ 
+jobs:
+  greet-users:
+    # Job name is Greeting
+    name: Greeting
+    # This job runs on Linux
+    runs-on: ubuntu-latest
+    steps:
+      # This step uses GitHub's hello-world-javascript-action: 
+      # https://github.com/actions/hello-world-javascript-action
+      - name: Hello world
+        uses: actions/hello-world-javascript-action@v1
+        with:
+          who-to-greet: "${{ github.event.inputs.name }}${{ inputs.name }}"
+        id: hello
+      # This step prints an output (time) from the previous step's action.
+      - name: Echo the greeting's time
+        run: echo 'The time was ${{ steps.hello.outputs.time }}.'
+
+  # You can now nest up to 4 levels of reusable workflows 
+  # giving you greater flexibility and better code reuse.
+  #call_reusable_workflow_job:
+  #  uses: githubabcs/gh-abcs-actions/.github/workflows/simple-workflow.yml@main

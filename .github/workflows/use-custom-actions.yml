@@ -1,0 +1,57 @@
+name: 05-3. Use Custom Actions (JS & Doker)
+
+on:
+  pull_request:
+    types: [labeled]
+  workflow_dispatch:
+
+# Limit the permissions of the GITHUB_TOKEN
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  
+  js-custom-actions:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - run: echo "🎉 Running the JS actions"
+
+      - name: hello-action
+        uses: ./.github/actions/hello-world-js
+        if: ${{ success() }}
+
+      - name: ha-ha
+        uses: ./.github/actions/joke-action
+        id: jokes
+
+      - name: create-issue
+        uses: ./.github/actions/issue-maker-js
+        with:
+          repo-token: ${{secrets.GITHUB_TOKEN}}
+          joke: ${{steps.jokes.outputs.joke-output}}
+          issue-title: "A joke for you from ${{ github.actor }}"      
+
+  docker-custom-actions:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - run: echo "🎉 Running the Docker actions"
+
+      - name: hello-action
+        uses: ./.github/actions/hello-world-docker
+
+      - name: meow
+        uses: ./.github/actions/cat-facts
+        id: cat
+
+      - name: create-issue
+        uses: ./.github/actions/issue-maker-docker
+        with:
+          repoToken: ${{secrets.GITHUB_TOKEN}}
+          catFact: ${{steps.cat.outputs.fact}}
+          issueTitle: "A cat fact for you from ${{ github.repository_owner }}"

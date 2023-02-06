@@ -1,0 +1,16 @@
+name: 05-2. Hello World Composite
+
+on: 
+  [workflow_dispatch]
+
+jobs:
+  hello_world_job1:
+    runs-on: ubuntu-latest
+    name: A job1 to say hello
+    steps:
+      - id: hello-world
+        uses: githubabcs/hello-world-composite-action@main
+        with:
+          who-to-greet: 'Hello from GH ABCs'
+      - run: echo random-number ${{ steps.hello-world.outputs.random-number }}
+        shell: bash

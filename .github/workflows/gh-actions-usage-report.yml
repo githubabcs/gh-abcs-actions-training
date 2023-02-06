@@ -1,0 +1,37 @@
+name: 00. GitHub Actions Usage Report
+
+on:
+  workflow_dispatch:
+  schedule:
+    #        ┌─────────────── minute
+    #        │ ┌──────────── hour
+    #        │ │ ┌────────── day (month)
+    #        │ │ │ ┌──────── month
+    #        │ │ │ │ ┌────── day (week)
+    - cron: '0 1 * * *'
+    
+jobs:
+  organization:
+    name: Organization Actions Usage Report
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Get Token
+        id: get_workflow_token
+        uses: peter-murray/workflow-application-token-action@v2
+        with:
+          application_id: ${{ secrets.GH_ABCS_APP_ACTIONS_APP_ID }}
+          application_private_key: "${{ secrets.GH_ABCS_APP_ACTIONS_APP_PRIVATE_KEY }}"
+          #permissions: "actions:write,contents:read,deployments:read"
+
+      - uses: ActionsDesk/report-action-usage@v2.5.1
+        id: action-usage-report
+        with:
+          token: ${{steps.get_workflow_token.outputs.token}} #${{ secrets.ORG_ADMIN_PAT_TOKEN }}
+          owner: githubabcs
+
+      - run: |
+          echo "${{ steps.action-usage-report.outputs.csv_result }}"
+          echo "${{ steps.action-usage-report.outputs.md_result }}"
