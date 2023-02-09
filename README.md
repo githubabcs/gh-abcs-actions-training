@@ -18,12 +18,12 @@
 
 ### Module 3: Environments and Secrets
 - Example: [environments-secrets.yml](/.github/workflows/environments-secrets.yml)
-- [ ] _Hands-on Lab:_ :point_right: [Activity 3](/labs/lab03.md)
+- [x] _Hands-on Lab:_ :point_right: [Activity 3](/labs/lab03.md)
 
 ### Module 4: Workflow Templates
 - Example: [reusable-workflow-template.yml](/.github/workflows/reusable-workflow-template.yml)
 - Example: [super-linter.yml](/.github/workflows/super-linter.yml)
-- [ ] _Hands-on Lab:_ :point_right: [Activity 4](/labs/lab04.md)
+- [x] _Hands-on Lab:_ :point_right: [Activity 4](/labs/lab04.md)
 
 ### Module 5: Custom actions
 - Example: [github-script.yml](/.github/workflows/github-script.yml)
@@ -32,7 +32,7 @@
 - Repo: [githubabcs/hello-world-composite-action](https://github.com/githubabcs/hello-world-composite-action)
 - Repo: [write-docker-actions](https://github.com/CalinL/write-docker-actions)
 - Repo: [write-javascript-actions](https://github.com/CalinL/writing-javascript-actions)
-- [ ] _Hands-on Lab:_ :point_right: [Activity 5](/labs/lab05.md)
+- [X] _Hands-on Lab:_ :point_right: [Activity 5](/labs/lab05.md)
 
 ### Module 6: Self-hosted runners
 - Example: [self-hosted-linux.yml](/.github/workflows/self-hosted-linux.yml)
