@@ -18,7 +18,7 @@
 
 ### Module 3: Environments and Secrets
 - Example: [environments-secrets.yml](/.github/workflows/environments-secrets.yml)
-- [ ] _Hands-on Lab:_ :point_right: [Activity 3](/labs/lab03.md)
+- [x] _Hands-on Lab:_ :point_right: [Activity 3](/labs/lab03.md)
 
 ### Module 4: Workflow Templates
 - Example: [reusable-workflow-template.yml](/.github/workflows/reusable-workflow-template.yml)
