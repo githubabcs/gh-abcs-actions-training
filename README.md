@@ -23,7 +23,7 @@
 ### Module 4: Workflow Templates
 - Example: [reusable-workflow-template.yml](/.github/workflows/reusable-workflow-template.yml)
 - Example: [super-linter.yml](/.github/workflows/super-linter.yml)
-- [ ] _Hands-on Lab:_ :point_right: [Activity 4](/labs/lab04.md)
+- [x] _Hands-on Lab:_ :point_right: [Activity 4](/labs/lab04.md)
 
 ### Module 5: Custom actions
 - Example: [github-script.yml](/.github/workflows/github-script.yml)
