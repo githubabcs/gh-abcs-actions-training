@@ -25,6 +25,7 @@ jobs:
 
       - name: ha-ha
         uses: ./.github/actions/joke-action
+        continue-on-error: true
         id: jokes
 
       - name: create-issue
