@@ -1,8 +1,8 @@
 name: 07-2. CD Workflow 
 
 on:
-  # push:
-  #   branches: [main]
+  push:
+     branches: [main]
   workflow_dispatch:
 
 env:
@@ -51,7 +51,10 @@ jobs:
     steps:
     
     # Add here the download-artifact step
-    
+    - name: Download artifact from build job
+      uses: actions/download-artifact@v2
+      with:
+        name: node-app
 
     - name: Deploy to Prod
       if: ${{ success() }}
