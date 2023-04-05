@@ -9,12 +9,12 @@
 ### Module 1: Introduction to GitHub Actions
 - Example: [github-actions-demo.yml](/.github/workflows/github-actions-demo.yml)
 - Example: [greet-everyone.yml](/.github/workflows/greet-everyone.yml)
-- [X] _Hands-on Lab:_ :point_right: [Activity 1](/labs/lab01.md)
+- [x] _Hands-on Lab:_ :point_right: [Activity 1](/labs/lab01.md)
 
 ### Module 2: Syntax
 - Example: [simple-workflow.yml](/.github/workflows/simple-workflow.yml)
 - Example: [job-dependencies.yml](/.github/workflows/job-dependencies.yml)
-- [X] _Hands-on Lab:_ :point_right: [Activity 2](/labs/lab02.md)
+- [x] _Hands-on Lab:_ :point_right: [Activity 2](/labs/lab02.md)
 
 ### Module 3: Environments and Secrets
 - Example: [environments-secrets.yml](/.github/workflows/environments-secrets.yml)
@@ -32,7 +32,7 @@
 - Repo: [githubabcs/hello-world-composite-action](https://github.com/githubabcs/hello-world-composite-action)
 - Repo: [write-docker-actions](https://github.com/CalinL/write-docker-actions)
 - Repo: [write-javascript-actions](https://github.com/CalinL/writing-javascript-actions)
-- [ ] _Hands-on Lab:_ :point_right: [Activity 5](/labs/lab05.md)
+- [x] _Hands-on Lab:_ :point_right: [Activity 5](/labs/lab05.md)
 
 ### Module 6: Self-hosted runners
 - Example: [self-hosted-linux.yml](/.github/workflows/self-hosted-linux.yml)
