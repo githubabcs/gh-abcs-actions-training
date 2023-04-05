@@ -1,6 +1,6 @@
 # Hands-on Labs Setup
 In this lab you will fork the repository and enable the GitHub Actions
-> Duration: 5-10 minutes update
+> Duration: 5-10 minutes
 References:
 - [Fork a repository](https://docs.github.com/en/get-started/quickstart/fork-a-repo)
 - [Quickstart for GitHub Actions](https://docs.github.com/en/actions/quickstart)
@@ -20,7 +20,7 @@ References:
 ```markdown
 ### Hands-on Labs & Activities:
 - [x] Hands-on Labs Setup
-- [ ] Module 1: Introduction to GitHub Actions
+- [X] Module 1: Introduction to GitHub Actions
 - [ ] Module 2: Syntax
 - [ ] Module 3: Environments and Secrets
 - [ ] Module 4: Workflow Templates
