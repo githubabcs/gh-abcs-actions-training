@@ -32,18 +32,18 @@
 - Repo: [githubabcs/hello-world-composite-action](https://github.com/githubabcs/hello-world-composite-action)
 - Repo: [write-docker-actions](https://github.com/CalinL/write-docker-actions)
 - Repo: [write-javascript-actions](https://github.com/CalinL/writing-javascript-actions)
-- [ ] _Hands-on Lab:_ :point_right: [Activity 5](/labs/lab05.md)
+- [X] _Hands-on Lab:_ :point_right: [Activity 5](/labs/lab05.md)
 
 ### Module 6: Self-hosted runners
 - Example: [self-hosted-linux.yml](/.github/workflows/self-hosted-linux.yml)
-- [ ] _Hands-on Lab:_ :point_right: [Activity 6](/labs/lab06.md)
+- [X] _Hands-on Lab:_ :point_right: [Activity 6](/labs/lab06.md)
 
 ### Module 7: CI/CD
 - Example: [ci-workflow.yml](/.github/workflows/ci-workflow.yml)
 - Example: [cd-workflow.yml](/.github/workflows/cd-workflow.yml)
 - Repo: [github-actions-for-packages](https://github.com/CalinL/github-actions-for-packages)
 - Repo: [github-actions-for-ci](https://github.com/CalinL/github-actions-for-ci)
-- [ ] _Hands-on Lab:_ :point_right: [Activity 7](/labs/lab07.md)
+- [X] _Hands-on Lab:_ :point_right: [Activity 7](/labs/lab07.md)
 
 ---
 
