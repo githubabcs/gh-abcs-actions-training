@@ -18,12 +18,12 @@
 
 ### Module 3: Environments and Secrets
 - Example: [environments-secrets.yml](/.github/workflows/environments-secrets.yml)
-- [x] _Hands-on Lab:_ :point_right: [Activity 3](/labs/lab03.md)
+- [ ] _Hands-on Lab:_ :point_right: [Activity 3](/labs/lab03.md)
 
 ### Module 4: Workflow Templates
 - Example: [reusable-workflow-template.yml](/.github/workflows/reusable-workflow-template.yml)
 - Example: [super-linter.yml](/.github/workflows/super-linter.yml)
-- [x] _Hands-on Lab:_ :point_right: [Activity 4](/labs/lab04.md)
+- [ ] _Hands-on Lab:_ :point_right: [Activity 4](/labs/lab04.md)
 
 ### Module 5: Custom actions
 - Example: [github-script.yml](/.github/workflows/github-script.yml)
