@@ -18,6 +18,6 @@ jobs:
     needs: call_greet_everyone_workflow_job
     uses: githubabcs/gh-abcs-actions-training/.github/workflows/github-actions-demo.yml@main
     
-call_dependencies_workflow_job:
+  call_dependencies_workflow_job:
     needs: call_reusable_workflow_job
     uses: githubabcs/gh-abcs-actions-training/.github/workflows/job-dependencies.yml@main
